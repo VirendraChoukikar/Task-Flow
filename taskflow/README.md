@@ -1,10 +1,10 @@
-# TaskFlow - Task Management Application
+TaskFlow - Task Management Application
 
-## Project Overview
+>> Project Overview
 
 TaskFlow is a web-based task management application built with Flask and SQLAlchemy. It allows users to create accounts, authenticate securely, and manage their tasks efficiently. Users can organize tasks by priority, status, and due dates, with a clean and intuitive dashboard interface.
 
-## Key Features
+>> Key Features
 
 - **User Authentication**: Secure login and registration system with password hashing
 - **Task Management**: Create, view, and manage tasks with priority levels and status tracking
@@ -12,7 +12,7 @@ TaskFlow is a web-based task management application built with Flask and SQLAlch
 - **User Profile**: View and manage user account information
 - **Responsive Design**: Clean, modern UI with CSS styling and JavaScript interactions
 
-## Technology Stack
+>> Technology Stack
 
 - **Backend**: Python with Flask web framework
 - **Database**: SQLite with SQLAlchemy ORM
@@ -20,7 +20,7 @@ TaskFlow is a web-based task management application built with Flask and SQLAlch
 - **Authentication**: Flask-Login with Werkzeug security
 - **Database ORM**: Flask-SQLAlchemy
 
-## Project Structure
+>> Project Structure
 
 ```
 taskflow/
@@ -44,7 +44,7 @@ taskflow/
 
 ---
 
-## Setup Instructions
+>> Setup Instructions
 
 ### Step 1: Prerequisites Check
 
@@ -74,13 +74,13 @@ cd C:\Users\viren\OneDrive\Desktop\Task\ Flow
 
 Creating a virtual environment isolates project dependencies from system Python.
 
-**On Windows (PowerShell/CMD):**
+>> On Windows (PowerShell/CMD): 
 
 ```bash
 python -m venv venv
 ```
 
-**Activate the virtual environment:**
+ >> Activate the virtual environment: 
 
 ```bash
 # Windows PowerShell
@@ -149,42 +149,42 @@ http://localhost:5000
 
 ---
 
-## Usage Guide
+>> Usage Guide
 
 ### First-Time Setup
 
-1. **Register a New Account**
+1. Register a New Account
 
    - Click the "Register" button on the login page
    - Enter your full name, email, and password
    - Click "Register" to create your account
 
-2. **Login**
+2. Login
 
    - Use your registered email and password
    - You'll be redirected to your dashboard
 
-3. **Create Tasks**
+3. Create Tasks
 
    - Navigate to the "Tasks" page
    - Click "New Task" to create a task
    - Fill in title, description, priority, and due date
    - Click "Create Task" to save
 
-4. **Manage Tasks**
+4. Manage Tasks
 
    - View all your tasks on the dashboard
    - Update task status (Pending, In Progress, Completed)
    - Set priority levels (Low, Medium, High)
    - Delete tasks when no longer needed
 
-5. **View Profile**
+5. View Profile
    - Click on "Profile" to see your account information
    - Update your details if needed
 
 ---
 
-## Environment Variables & Configuration
+>> Environment Variables & Configuration
 
 ### Secret Key
 
@@ -213,7 +213,7 @@ The database file `taskflow.db` will be created in your project root directory a
 
 ---
 
-## Troubleshooting
+>> Troubleshooting
 
 ### Issue: "ModuleNotFoundError: No module named 'flask'"
 
@@ -229,7 +229,7 @@ pip install -r requirements.txt
 
 ### Issue: "Port 5000 is already in use"
 
-**Solution**: Change the port in `app.py`:
+>> Solution**: Change the port in `app.py`:
 
 ```python
 if __name__ == '__main__':
@@ -238,7 +238,7 @@ if __name__ == '__main__':
 
 ### Issue: Database locked or corrupted
 
-**Solution**: Delete `taskflow.db` and restart the application:
+ >> Solution**: Delete `taskflow.db` and restart the application:
 
 ```bash
 rm taskflow.db  # Linux/macOS
@@ -246,22 +246,22 @@ del taskflow.db # Windows
 python app.py
 ```
 
-### Issue: Git not found
+>> Issue: Git not found
 
-**Solution**: Install Git from https://git-scm.com/download/win and restart your terminal.
+-- Solution --: Install Git from https://git-scm.com/download/win and restart your terminal.
 
 ---
 
-## Development Workflow
+>> Development Workflow
 
-### Making Changes
+>>> Making Changes
 
 1. Modify code in your editor
 2. Flask auto-reloads when debug mode is on
 3. Test changes in your browser
 4. Check console for errors
 
-### Deactivating Virtual Environment
+>> Deactivating Virtual Environment
 
 When finished, deactivate the virtual environment:
 
@@ -269,7 +269,7 @@ When finished, deactivate the virtual environment:
 deactivate
 ```
 
-### Version Control
+>> Version Control
 
 Track your changes with Git:
 
@@ -281,7 +281,7 @@ git commit -m "Initial TaskFlow setup"
 
 ---
 
-## Dependencies Details
+>> Dependencies Details
 
 | Package          | Version | Purpose                                    |
 | ---------------- | ------- | ------------------------------------------ |
@@ -292,7 +292,7 @@ git commit -m "Initial TaskFlow setup"
 
 ---
 
-## Support & Documentation
+>> Support & Documentation
 
 - **Flask Documentation**: https://flask.palletsprojects.com/
 - **SQLAlchemy Documentation**: https://docs.sqlalchemy.org/
@@ -300,13 +300,13 @@ git commit -m "Initial TaskFlow setup"
 
 ---
 
-## License
+>> License
 
 This project is open source and available under the MIT License.
 
 ---
 
-## Author Notes
+> Author Notes
 
 TaskFlow is designed for personal task management and can be extended with additional features such as:
 
@@ -318,4 +318,4 @@ TaskFlow is designed for personal task management and can be extended with addit
 
 ---
 
-**Last Updated**: January 15, 2026
+Last Updated**: January 15, 2026
