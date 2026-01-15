@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block content %}
+<h1>DASHBOARD</h1>
+
+<div class="cards">
+    <div class="card red">Total Tasks
+        <h2>{{ total }}</h2>
+    </div>
+    <div class="card olive">Completed
+        <h2>{{ completed }}</h2>
+    </div>
+    <div class="card brown">Pending
+        <h2>{{ pending }}</h2>
+    </div>
+    <div class="card">Completion
+        <h2>{{ percent }}%</h2>
+    </div>
+</div>
+
+<h3>Recent Tasks</h3>
+<ul>
+    {% for task in tasks %}
+    <li>{{ task.title }} - {{ task.status }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

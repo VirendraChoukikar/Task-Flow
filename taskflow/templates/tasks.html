@@ -1,0 +1,24 @@
+{% extends 'base.html' %} {% block content %}
+<h1>MY TASKS</h1>
+
+<form method="POST">
+    <input name="title" placeholder="Task Title" required>
+    <input name="description" placeholder="Description">
+    <select name="priority">
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+    </select>
+    <input type="date" name="due_date">
+    <button>Add Task</button>
+</form>
+
+{% for task in tasks %}
+<div class="task {% if task.status=='Completed' %}done{% endif %}">
+    <h3>{{ task.title }}</h3>
+    <p>{{ task.description }}</p>
+    <span>{{ task.priority }}</span>
+    <a href="/task/{{task.id}}/toggle">✔</a>
+    <a href="/task/{{task.id}}/delete">🗑</a>
+</div>
+{% endfor %} {% endblock %}

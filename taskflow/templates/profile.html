@@ -1,0 +1,8 @@
+{% extends 'base.html' %} {% block content %}
+<h1>YOUR PROFILE</h1>
+<img src="/static/images/profile.png" width="120">
+<p><b>Name:</b> {{ current_user.full_name }}</p>
+<p><b>Email:</b> {{ current_user.email }} ✔</p>
+<p><b>Status:</b> Approved</p>
+<p><b>Member Since:</b> {{ current_user.created_at.strftime('%B %Y') }}</p>
+{% endblock %}
